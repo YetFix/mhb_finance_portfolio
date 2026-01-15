@@ -1,130 +1,85 @@
-<!-- Footer Area Start -->
-<footer class="footer" id="footer"
-    style="background-image: url({{ asset('front/img/shanta.gif') }});background-size: cover;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="footer-widget about-widget">
-                    <div class="footer-logo">
-                        <a href="/">
-                            <img src="{{ asset('front/img/shanta_Network_logo.jpg') }}" alt="Shanta network"
-                                style="width:100px;border-radius:50%">
-                        </a>
-                    </div>
-                    <div class="text">
-                        <p>
-                            Shanta Network
-                        </p>
-                    </div>
-
-                </div>
-                <div class="footer-widget  footer-newsletter-widget">
-                    <h4 class="title">
-                        Newsletter
-                    </h4>
-                    <div class="newsletter-form-area">
-                        <form action="{{ route('subscribe') }}" method="POST">
-                            @csrf
-                            <input type="email" name="email" placeholder="Email Address" required>
-                            <button type="submit">
-                                <i class="far fa-paper-plane"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="footer-widget address-widget">
-                    <h4 class="title">
-                        Sitemap
-                    </h4>
-                    <ul class="about-info">
-                        <li><a href="#">Teams</a></li>
-                        <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
-                        <li><a href="/privacy-policy">Privacy &amp; Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="footer-widget address-widget">
-                    <h4 class="title">
-                        Address
-                    </h4>
-                    <ul class="about-info">
-                        <li>
-                            <p>
-                                <i class="fas fa-globe"></i>
-                                Chuknagar Bazar, Dumuria Upazila, Khulna , Bangladesh.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <i class="fas fa-phone"></i>
-                                01901167070 , 01911907337
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <i class="far fa-envelope"></i>
-                                shantanetwork2021@gmail.com
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-widget  footer-newsletter-widget">
-                    <div class="social-links">
-                        <h4 class="title">
-                            Connect with us on social media :
-                        </h4>
-                        <div class="fotter-social-links">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                </li>
-                               
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<section class="copy">
-    <div class="copy-bg" style="background-color:#black">
-        <div class="container">
-            <div class="row align-items-center text-white">
-                <!-- Center Section: Copyright -->
-                <div class="col-lg-8 offset-lg-2 text-center">
-                    <div class="content text-white">
-                        <p>Copyright © 2025. All Rights Reserved By Shanta Network</p>
-                    </div>
-                </div>
-                <div class="position-absolute end-0 pe-5">
-                    <div class="content d-flex justify-content-end align-items-center" style="margin-top: -17px;">
-                        <span>Design & Developed by &nbsp;</span>
-                        <a href="https://yetfix.com" target="_blank">
-                            <span style="color:#2BABE4">Yetfix Limited</span>
-                            <img src="{{ asset('front/img/yetfix.png') }}" alt="Company Logo"
-                                style="height: 30px; margin-left: 5px;">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Footer Area End -->
+  <footer class="footer-area style-one">
+      <div class="container style-one">
+          <div class="footer-top pt-115">
+              <div class="row mb-65">
+                  <div class="col-xxl-5 col-lg-4 col-md-5">
+                      <div class="footer-widget mb-30">
+                          <a href="/" class="logo d-block mb-50">
+                              <img src="{{ asset('frontend/assets/img/logos/logo_1.png') }}" style="height:80px"
+                                  alt="Logo">
+                          </a>
+                          <a href="tel:01719336566" class="contact-num d-block fw-bold text_secondary mb-18">+880-1719336566</a>
+                         
+                      </div>
+                  </div>
+                  <div class="col-xxl-4 col-lg-4 col-md-7 ps-xxl-4">
+                      <div class="footer-widget mb-30">
+                          <h3 class="footer-widget-title fs-24 text-white mb-20">Quick Links</h3>
+                          <ul class="footer-menu style-one list-unstyled mb-0">
+                              <li class="d-block fs-xxl-18"><a href="/">Home</a></li>
+                              <li class="d-block fs-xxl-18"><a href="#about">About Us</a></li>
+                              <li class="d-block fs-xxl-18"><a href="#services">Services</a></li>
+                              <li class="d-block fs-xxl-18"><a href="#cases">Case Studies</a></li>
+                              <li class="d-block fs-xxl-18"><a href="#blogs">Blog </a></li>
+                              <li class="d-block fs-xxl-18"><a href="#contact">Contact</a></li>
+                
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xxl-3 col-lg-4 col-md-6">
+                      <div class="footer-widget mb-30">
+                          <h3 class="footer-widget-title fs-24 text-white mb-20">Stay Connected</h3>
+                          <p class="text-gray fs-xxl-18 mb-25">Join our newsletter and stay updated on the latest news
+                          </p>
+                          <form action="#" class="newsletter-form style-one position-relative">
+                              <input type="email" class="w-100 fs-xxl-18 text-white border-0 round-5 outline-0"
+                                  placeholder="Type your email" required>
+                              <button type="submit"
+                                  class="position-absolute top-0 end-0 h-100 border-0 bg-transparent"><i
+                                      class="ri-send-plane-fill"></i></button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+              <div class="row ">
+                  <div class="col-md-7 pe-xxl-0">
+                      <a href="/" class="logo-text text-white reveal-text-left transition">MhbCon</a>
+                  </div>
+                  <div class="col-xl-4 offset-xxl-1 col-md-5 ps-xxl-4">
+                      <p class="text-gray fs-xxl-18 mb-25">MhbCon is a trusted accounting and management consulting firm
+                          helping businesses grow with clarity and control.</p>
+                      <ul class="social-profile style-one list-unstyled mb-0">
+                          <li><a href="https://www.facebook.com/" target="_blank"
+                                  class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i
+                                      class="ri-facebook-fill"></i></a></li>
+                          <li><a href="https://x.com/?lang=en" target="_blank"
+                                  class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i
+                                      class="ri-twitter-x-line"></i></a></li>
+                          <li><a href="https://www.linkedin.com/" target="_blank"
+                                  class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i
+                                      class="ri-linkedin-fill"></i></a></li>
+                          <li><a href="https://www.instagram.com/" target="_blank"
+                                  class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i
+                                      class="ri-instagram-line"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <div class="row align-items-center">
+                  <div class="col-md-7 pe-md-0 mb-sm-10">
+                      <p class="copyright-text fs-xxl-18 text-md-start text-center text-gray mb-0"><i
+                              class="ri-copyright-line"></i><span class="text_secondary ms-1">MhbCon</span> is
+                          Design and Developed By <a href="https://yetfix.com" target="_blank"
+                              class="text_secondary link-hover-white">Yetfix Limited</a></p>
+                  </div>
+                  <div class="col-md-5">
+                      <ul class="footer-bottom-menu list-unstyled text-lg-end text-center mb-0">
+                          <li class="fs-xxl-18"><a href="#">Terms And Conditions</a></li>
+                          <li class="fs-xxl-18"><a href="#">Privacy Policy</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>

@@ -1,37 +1,4 @@
 @charset "UTF-8";
-/*
-@File: Exrox Template Styles
-* This file contains the styling for the actual template, this
-is the file you need to edit to change the look of the
-template.
-This files table contents are outlined below>>>>>
-/*-------------------------------------------------
-=========Table Of Contents========
-1.  General Styles 
-2.  Preloader CSS
-3.  Back To Top Button CSS
-4.  Animation CSS
-5.  Custom Cursor CSS
-6.  Pagination CSS
-8.  Breadcrumb CSS
-7.  Hero Section CSS
-9.  About Section CSS
-10. Why Choose Us Section CSS
-11. Service Section CSS
-12. Case Studies CSS
-13. Partner Brand CSS
-14. Industry Section CSS
-15. Moving text CSS
-16. Pricing Card CSS
-17. Blog CSS
-18. Contact CSS
-19. CTA Box CSS
-20. FAQ CSS
-21. Testimonials CSS
-22. Team CSS
-23. Sidebar Widget CSS
-24. Blog,Case, Service, Career Details CSS
----------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
 :root {
   --primaryFont: "DM Sans", sans-serif;
