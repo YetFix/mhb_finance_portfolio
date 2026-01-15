@@ -1,0 +1,1 @@
+<img src="{{asset('front/img/shanta_Network_logo.jpg')}}" alt="Internet" style="height:60px" >

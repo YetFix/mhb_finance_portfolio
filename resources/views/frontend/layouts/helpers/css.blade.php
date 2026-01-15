@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="{{asset('frontend/assets/css/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{asset('frontend/assets/css/swiper-bundle.min.css')}}">
+<link rel="stylesheet" href="{{asset('frontend/assets/css/scrollcue.min.css')}}">
+<link rel="stylesheet" href="{{asset('frontend/assets/css/remixicon.css')}}">
+<link rel="stylesheet" href="{{asset('frontend/assets/css/header.css')}}">
+<link rel="stylesheet" href="{{asset('frontend/assets/css/style.css')}}">
+<link rel="stylesheet" href="{{asset('frontend/assets/css/footer.css')}}">
+<link rel="stylesheet" href="{{asset('frontend/assets/css/responsive.css')}}">
+<link rel="stylesheet" href="{{asset('frontend/assets/css/dark-theme.css')}}">
