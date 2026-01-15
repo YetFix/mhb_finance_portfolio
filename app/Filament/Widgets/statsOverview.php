@@ -14,7 +14,6 @@ class statsOverview extends BaseWidget
     protected function getStats(): array
     {
         return [
-            Stat::make('Total Packages',Package::count()),
             Stat::make('Total Messages',Message::count()),
             Stat::make('Total Slider',Slider::count()),
             Stat::make('Total Admins',User::count())

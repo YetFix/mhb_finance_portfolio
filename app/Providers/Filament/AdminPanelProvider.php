@@ -55,7 +55,8 @@ class AdminPanelProvider extends PanelProvider
                 Authenticate::class,
             ])
             ->brandLogo(asset('rsz_yetfix.png'))
-            ->favicon(asset('front/img/shanta_Network_logo.jpg'));
+            ->favicon(asset('frontend/assets/img/logos/logo_1.png'));
+           
     }
 }
 
