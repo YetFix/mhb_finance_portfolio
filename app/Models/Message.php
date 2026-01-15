@@ -10,6 +10,7 @@ class Message extends Model
         'name',
         'phone',
         'address',
+        'service',
         'message'
     ];
 

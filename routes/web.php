@@ -1,11 +1,7 @@
 <?php
 use App\Models\Slider;
-use App\Models\Package;
-use App\Models\News;
 use App\Models\Contact;
 use App\Models\Message;
-use App\Models\Team;
-use App\Models\FTP;
 use App\Models\Subscribe;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
@@ -18,18 +14,10 @@ Route::get('/seed', function () {
     return "Migration and Seed done!";
 });
 Route::get('/', function () {
-    $packages = Package::all();
-    $sliders = Slider::all();
-    return view('welcome',compact('sliders','packages'));
-})->name('home');
-Route::get('/speed-test', function () {
-    return view('frontend.speed');
-})->name('speed');
-Route::get('/packages',function(){
-    $packages = Package::all();
-    return view('frontend.packages',compact('packages'));
-})->name('packages');
 
+    $sliders = Slider::all();
+    return view('welcome',compact('sliders'));
+})->name('home');
 
 Route::get('/contact',function(){
     return view('frontend.contact');
@@ -42,10 +30,6 @@ Route::get('/services',function(){
     return view('frontend.services');
 })->name('services');
 
-Route::get('/medias',function(){
-    $ftps = FTP::all();
-    return view('frontend.medias',compact('ftps'));
-})->name('medias');
 
 
 Route::post('/send', function (Request $request) {
@@ -53,6 +37,7 @@ Route::post('/send', function (Request $request) {
         'name'=>'required',
         'phone'=>'required',
         'address'=>'required',
+        'service'=>'required',
         'message'=>'required',
     ]);
    Message::create($data);

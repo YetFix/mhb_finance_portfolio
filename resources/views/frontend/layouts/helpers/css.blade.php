@@ -7,3 +7,5 @@
 <link rel="stylesheet" href="{{asset('frontend/assets/css/footer.css')}}">
 <link rel="stylesheet" href="{{asset('frontend/assets/css/responsive.css')}}">
 <link rel="stylesheet" href="{{asset('frontend/assets/css/dark-theme.css')}}">
+
+<link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">

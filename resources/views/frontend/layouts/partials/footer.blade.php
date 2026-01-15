@@ -31,8 +31,9 @@
                           <h3 class="footer-widget-title fs-24 text-white mb-20">Stay Connected</h3>
                           <p class="text-gray fs-xxl-18 mb-25">Join our newsletter and stay updated on the latest news
                           </p>
-                          <form action="#" class="newsletter-form style-one position-relative">
-                              <input type="email" class="w-100 fs-xxl-18 text-white border-0 round-5 outline-0"
+                          <form action="{{ route('subscribe') }}" class="newsletter-form style-one position-relative" method="post">
+                              @csrf
+                              <input type="email" name="email" class="w-100 fs-xxl-18 text-white border-0 round-5 outline-0"
                                   placeholder="Type your email" required>
                               <button type="submit"
                                   class="position-absolute top-0 end-0 h-100 border-0 bg-transparent"><i

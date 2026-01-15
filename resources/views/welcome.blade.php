@@ -167,7 +167,7 @@
                             <div class="col-xxl-3 col-lg-4 col-md-6">
                                 <div class="service-card style-two position-relative z-1 round-20 mb-30" data-cue="anim-left" data-duration="500" data-delay="400">
                                     <img src="{{ asset('frontend/assets/img/services/consultant.svg') }}" alt="Icon">
-                                    <h3 class="fs-24"><a href="#" class="text-title link-hover-primary transition">Business Consulting</a></h3>
+                                    <h3 class="fs-24"><a href="#" class="text-title link-hover-primary transition">Finance Consulting</a></h3>
                                     <ul class="feature-list style-one list-unstyled">
                                         <li class="position-relative fs-xxl-18"><img src="{{ asset('frontend/assets/img/icons/check.svg') }}" alt="Icon" class="position-absolute start-0">Financial Strategy</li>
                                         <li class="position-relative fs-xxl-18"><img src="{{ asset('frontend/assets/img/icons/check.svg') }}" alt="Icon" class="position-absolute start-0">Startup Advisory</li>
@@ -392,31 +392,33 @@
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-md-7 ps-xxl-4">
-                                    <form action="#" class="contact-form style-one">
+                                    <form action="{{ route('send') }}" class="contact-form style-one" method="post">
+                                        @csrf
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group mb-45">
-                                                    <input type="text" class="w-100 bg-transparent fs-xxl-18 text-title outline-0" placeholder="Full Name*" required>
+                                                    <input type="text" name="name" class="w-100 bg-transparent fs-xxl-18 text-title outline-0" placeholder="Name*" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group mb-45">
-                                                    <input type="email" class="w-100 bg-transparent fs-xxl-18 text-title outline-0" placeholder="Email*" required>
+                                                    <input type="text" name="phone" class="w-100 bg-transparent fs-xxl-18 text-title outline-0" placeholder="phone*" required>
+                                                </div>
+                                            </div>
+                                           
+                                            <div class="col-md-6">
+                                                <div class="form-group mb-45">
+                                                    <input type="text" name="service" class="w-100 bg-transparent fs-xxl-18 text-title outline-0" placeholder="Service Name*" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group mb-45">
-                                                    <input type="email" class="w-100 bg-transparent fs-xxl-18 text-title outline-0" placeholder="Phone Number">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group mb-45">
-                                                    <input type="text" class="w-100 bg-transparent fs-xxl-18 text-title outline-0" placeholder="Type Service Name*" required>
+                                                    <input type="text" name="address" class="w-100 bg-transparent fs-xxl-18 text-title outline-0" placeholder="Your Address*" required>
                                                 </div>
                                             </div>
                                             <div class="col-12">
                                                 <div class="form-group mb-22">
-                                                    <textarea class="w-100 bg-transparent fs-xxl-18 text-title outline-0 resize-0" placeholder="Your Message"></textarea>
+                                                    <textarea name="message" class="w-100 bg-transparent fs-xxl-18 text-title outline-0 resize-0" placeholder="Your Message"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-12">
